@@ -1,0 +1,109 @@
+
+<html>
+<head>
+    <title>Strike a Chord</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #2c2c6c;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link.active {
+            background-color: #dcdcf2;
+            color: black;
+        }
+        .header {
+            text-align: center;
+            font-size: 2em;
+            color: #2c2c6c;
+            margin: 20px 0;
+        }
+        .content {
+            background-color: #dcdcf2;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .lessons-section {
+            text-align: center;
+        }
+        .lessons-section h3 {
+            margin-top: 20px;
+        }
+        .lessons-section img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-music"></i>
+                Strike a Chord
+                <i class="fas fa-music"></i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Lessons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rentals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="header">
+        <i class="fas fa-music"></i>
+        Strike a Chord
+        <i class="fas fa-music"></i>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>Private Lessons</h2>
+            <p>We make learning music fun! We offer private lessons for piano, guitar, and violin. Contact us today to schedule your first lesson for free!</p>
+            <p>We provide:</p>
+            <ul>
+                <li>Dedicated and Professional Instructors</li>
+                <li>No Long-Term Contracts</li>
+                <li>Flexible Schedule</li>
+                <li>Spring and Winter Performances</li>
+                <li>Summer Camps</li>
+            </ul>
+        </div>
+        <div class="row lessons-section">
+            <div class="col-md-4">
+                <h3>Piano Lessons</h3>
+                <img alt="Piano lesson with instructor and student" height="200" src="https://placehold.co/300x200" width="300"/>
+            </div>
+            <div class="col-md-4">
+                <h3>Guitar Lessons</h3>
+                <img alt="Guitar lesson with instructor and student" height="200" src="https://placehold.co/300x200" width="300"/>
+            </div>
+            <div class="col-md-4">
+                <h3>Violin Lessons</h3>
+                <img alt="Violin lesson with instructor and student" height="200" src="https://placehold.co/300x200" width="300"/>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

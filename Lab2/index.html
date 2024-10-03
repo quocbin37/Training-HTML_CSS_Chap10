@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #3b2a1a;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
+
+        .content {
+            background-color: #fdf7f1;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .footer {
+            background-color: #3b2a1a;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #answer {
+            text-align: center;
+            font-weight: bold;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #answer h2 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">WildRescue</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partnership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <p onclick="ans1()">How can I determine if a baby animal is an orphan?</p>
+        <p onclick="ans2()">How can I tell if an animal has rabies?</p>
+        <p onclick="ans3()">I found a baby bird that fell from its nest. Will the parents orphan it if I touch it?</p>
+        <p onclick="ans4()">How can I volunteer?</p>
+        <p><strong>Answer:</strong></p>
+        <div id="answer"><h2></h2></div>
+    </div>
+
+    <div class="footer">
+        <p>© Copyright 2021. All Rights Reserved.</p>
+        <p>contact@wildrescue.net</p>
+    </div>
+
+    <script>
+        const answerElement = document.querySelector('#answer h2');
+        
+        function showAnswer(text) {
+            answerElement.textContent = text;
+            answerElement.style.display = 'block';
+        }
+
+        function ans1() {
+            showAnswer("Step back and observe the situation for a few minutes. Wait to see if a parent arrives. If the animal is in immediate danger from a predator or is in the road, remove the baby and bring to a rescue center.");
+        }
+
+        function ans2() {
+            showAnswer("You cannot tell if an animal has rabies simply by seeing it. A test must be performed to determine if an animal has rabies. Do not approach wildlife that you suspect might be rabid. Contact us to have the animal removed.");
+        }
+
+        function ans3() {
+            showAnswer("No. This is a myth. The parents will retrieve the baby bird and place it back in its nest. If the parents do not return, contact us.");
+        }
+
+        function ans4() {
+            showAnswer("We need volunteers to help feed animals, care for animals, and clean animal pens. We also accept donations.");
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
